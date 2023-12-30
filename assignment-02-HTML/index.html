@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Assignment 02 - HTML</title>
+</head>
+
+<body bgcolor="#FBF9F1">
+    <h1>Assignment 02 - HTML</h1>
+    <h3>This is the second assignment of the frontend diploma that includes form tags like inputs, select, and submit button</h3>
+    <form method="get">
+        <fieldset>
+            <legend style="background-color: #E5E1DA;">Personal Data</legend>
+            <fieldset style="background-color: #AAD7D9;">
+                <legend style="background-color: #E5E1DA;"><br><br>Your name<br><br></legend>
+                <div>
+                    <label for="first_name">First Name &nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="ex: Ahmed">
+                </div>
+                <div>
+                    <label for="second_name">Second Name :</label>
+                    <input type="text" id="second_name" name="second_name" placeholder="ex: Mohamed">
+                </div>
+            </fieldset>
+            <br><br>
+            <div>
+                <label for="phone">Your phone &nbsp;&nbsp;&nbsp;:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="password">Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="re_password">Re-password :</label>
+                <input type="password" id="re_password" name="re_password">
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="study_status" id="student" value="student"><label for="student">Student</label>
+                <br>
+                <input type="checkbox" name="study_status" id="graduated" value="graduated"><label for="graduated">Graduated</label>
+            </div>
+            <br><br>
+            <div>
+                <select name="collage" id="collage">
+                    <option value="">---------</option>
+                    <optgroup label="Collage Class A">
+                        <option value="option_a1">Option 01</option>
+                        <option value="option_a2">Option 02</option>
+                        <option value="option_a3">Option 03</option>
+                    </optgroup>
+                    <optgroup label="Collage Class B">
+                        <option value="option_b1">Option 01</option>
+                        <option value="option_b2">Option 02</option>
+                        <option value="option_b3">Option 03</option>
+                    </optgroup>
+                    <optgroup label="Collage Class C">
+                        <option value="option_c1">Option 01</option>
+                        <option value="option_c2">Option 02</option>
+                        <option value="option_c3">Option 03</option>
+                    </optgroup>
+                </select>
+            </div>
+            <button type="submit"><img src="imgs/submit-button.png" alt="Submit Button" width="80"></button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
