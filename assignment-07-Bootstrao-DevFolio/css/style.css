@@ -1,0 +1,43 @@
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border: 15px solid var(--bs-primary);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section > p::after {
+    content: "";
+    width: 10%;
+    border: 3px solid var(--bs-primary);
+    position: absolute;
+    left: 45%;
+    bottom: -10px;
+}
+
+.counters {
+    background-image: url('../images/counters-bg.jpg');
+}
+
+section .layer {
+    background-color: rgba(49, 18, 223, 0.7);
+}
+
+.testimonials {
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: cover;
+}
+

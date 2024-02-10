@@ -1,0 +1,290 @@
+.container {
+    display: grid;
+    grid-template-areas: "iphone iphone text text"
+    "keyboard monitor monitor disk"
+    "gamepad tablet tablet disk"
+    "twitter much vision vision";
+    grid-template-columns: repeat(3, 25%);
+    grid-auto-rows: max-content;
+}
+
+.iphone {
+    grid-area: iphone;
+    display: flex;
+    padding-top: 50px;
+}
+
+.iphone .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.iphone .cover {
+    width: 50%;
+}
+
+.iphone .cover img {
+    display: block;
+    width: 70%;
+    margin: auto;
+
+}
+
+
+.text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    background-color: rgb(248, 237, 237);
+}
+
+
+.keyboard {
+    background-color: #f05638;
+    grid-area: keyboard;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+.keyboard .cover {
+    width: 60%;
+    margin: auto;
+}
+
+.keyboard .cover img {
+    display: block;
+    width: 100%;
+}
+
+.keyboard .content {
+    width: 60%;
+    margin: auto;
+}
+
+.monitor {
+    grid-area: monitor;
+    display: flex;
+    padding-top: 50px;
+}
+
+.monitor .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.monitor .left .layer {
+    width: 60%;
+    margin: 0;
+}
+
+.monitor .left .content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.monitor .left .content h3 {
+    text-align: left;
+}
+
+.monitor .left .content h1 {
+    text-align: left;
+}
+
+.monitor .cover img {
+    display: block;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.monitor .right {
+    width: 50%;
+    padding: 10px 80px 0 20px;
+}
+
+.monitor .right p {
+    line-height: 30px;
+}
+
+.disk {
+    grid-area: disk;
+    background-color: #8f76bc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.disk .up {
+    background-color: #8166b0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.disk .up .popular {
+    background-color: #8f76bc;
+    border-radius: 40%;
+    display: flex;
+    gap: 10px;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.disk .up .popular img {
+    height: 50%;
+    margin: auto;
+}
+
+.disk .up .cover {
+    width: 80%;
+    margin: auto;
+}
+
+.disk .up .cover img {
+    width: 100%;
+}
+
+.disk .down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disk .down p {
+    width: 70%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.disk .down button {
+    border-radius: 45%;
+    padding: 20px;
+    border: none;
+    background-color: #ffc80a;
+}
+
+.gamepad {
+    grid-area: gamepad;
+    background-color: #f7f8f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.gamepad .cover {
+    width: 80%;
+    margin: auto;
+}
+
+.gamepad .cover img {
+    display: block;
+    width: 100%;
+}
+
+.tablet {
+    grid-area: tablet;
+    background-color: #93b6b7;
+}
+
+.tablet .content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: auto;
+    background-color: #f05638;
+}
+
+.tablet .content .layer {
+    background-image: url('../images/5bc2f42d5a5ed97dab707e7e_UX.png');
+    width: 100%;
+}
+
+.tablet .content .layer img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.tablet .layer {
+
+}
+
+.twitter {
+    grid-area: twitter;
+    background-color: #38d5f4;
+}
+
+.twitter .content {
+    background-color: #35cfed;
+    border-radius: 50%;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter .content h1 {
+    text-align: center;
+}
+
+.much {
+    grid-area: much;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.much h3 {
+    background-color: #7bc424;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+.much h1, h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.vision {
+    grid-area: vision;
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+}
+
+.vision img {
+    display: 0;
+    width: 40%;
+}
+
+.vision h1 {
+    color: #fff;
+    text-align: center;
+}

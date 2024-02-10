@@ -1,0 +1,358 @@
+/* Nav Style */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--color-light);
+}
+
+nav .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav .nav-logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #212529;
+    font-weight: 700;
+    font-family: var(--main-font-family);
+}
+
+nav .nav-logo a::after {
+    content: ".";
+    color: var(--main-color);
+}
+
+nav .container {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+nav #nav-items-toggle-checkbox {
+    display: none;
+}
+
+nav .nav-items-toggle-button {
+    cursor: pointer;
+}
+
+
+
+nav .nav-items {
+    background: wheat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    display: none;
+}
+
+nav .nav-items .close-icon {
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    color: #212529;
+}
+
+nav .nav-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav .nav-items a {
+    text-decoration: none;
+    color: #212529;
+    /* display: block; */
+    font-size: 17px;
+}
+
+nav .nav-items a:hover,
+nav .nav-items .close-icon:hover {
+    color: #000;
+}
+
+nav .nav-items .close-icon:checked
+
+nav #nav-items-toggle-checkbox:checked ~ .nav-items {
+    display: block;
+}
+/* ########################################################################## */
+
+/* Header Style */
+header {
+    background-color: var(--color-light-gray);
+    height: 100dvh;
+    font-family: var(--title-font-family);
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-hero {
+    display: flex;
+    align-items: center;
+}
+
+header .header-hero img {
+    display: block;
+    /* width: 80%; */
+    margin: auto;
+}
+
+header .header-title h1 {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+header .header-title p {
+    font-family: var(--main-font-family);
+    line-height: 26px;
+}
+
+header .header-title .header-actions button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    color: var(--color-light);
+}
+/* ########################################################################## */
+
+/* All Section Style */
+section h6 {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+section h3 {
+    font-size: 50px;
+    font-weight: 100;
+    font-family: var(--title-font-family);
+    margin-top: 0;
+}
+
+section h3 span {
+    color: var(--main-color);
+}
+
+section img {
+    display: block;
+    width: 100%;
+}
+/* ########################################################################## */
+
+/* Chefs Section Style */
+section#chefs .chefs-items {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section#chefs .chefs-items .item {
+    padding: 20px;
+}
+
+section#chefs .chefs-items .item .card {
+    /* width: 90%; */
+    margin: auto;
+    transition: transform 1s;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+section#chefs .chefs-items .item .card:hover {
+    transform: scale(1.1);
+}
+
+
+
+section#chefs .chefs-items .item h4 {
+    text-align: center;
+    font-family: var(--secondary-font-family);
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+section#chefs .chefs-items .item h6 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+
+section#chefs .chefs-items .item p {
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+/* ########################################################################## */
+
+/* Gallery Section Style */
+section#gallery {
+    background-color: var(--color-light-gray);
+}
+
+section#gallery .meals-items {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+section#gallery .meals-items .item {
+}
+
+section#gallery .meals-items .card {
+    margin: 20px auto;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s;
+    border: solid 2px var(--color-light);
+}
+
+section#gallery .meals-items .card .layer {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(100%);
+    transition: transform 1s;
+    color: var(--color-light);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#gallery .meals-items .card .layer h4 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--secondary-font-family);
+    margin-bottom: 0;
+}
+
+section#gallery .meals-items .card .layer p {
+    font-family: var(--main-font-family);
+}
+
+section#gallery .meals-items .card:hover img {
+    transform: scale(1.1);
+}
+
+section#gallery .meals-items .card:hover .layer {
+    transform: translateY(0);
+}
+/* ########################################################################## */
+
+/* Contact Section Style */
+section#contact .content {
+    display: flex;
+    flex-flow: column;
+    /* width: 90%; */
+    margin: 20px auto;
+}
+
+section#contact .map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+section#contact .content .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#contact .content .contacts .card {
+    background-color: var(--color-light-gray);
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+    padding: 5px 10px;
+    
+}
+
+section#contact .content .contacts .card .icon {
+    background-color: var(--main-color);
+    color: var(--color-light);
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+section#contact .content .contacts .card .card-content h5 {
+    margin-bottom: 0;
+}
+
+section#contact .content .contact-form {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+section#contact .content .contact-form input,
+section#contact .content .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+section#contact .content .contact-form button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    color: var(--color-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (min-width: 768px) { */
+    /* .items {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .item {
+        width: 25%;
+    } */
+/* } */
+
+@media screen and (min-width:1024px) {
+    header {
+        flex-direction: row-reverse;
+    }
+
+}
+
+
