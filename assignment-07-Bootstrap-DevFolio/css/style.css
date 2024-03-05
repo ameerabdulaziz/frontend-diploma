@@ -5,6 +5,16 @@ body {
 header {
     background-image: url('../images/hero-bg.jpg');
     background-size: cover;
+    background-attachment: fixed;
+}
+
+section .about h3::after {
+    content: '';
+    border: 2px solid var(--bs-primary);
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .icon {
@@ -30,6 +40,8 @@ section > p::after {
 
 .counters {
     background-image: url('../images/counters-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 section .layer {
@@ -39,5 +51,6 @@ section .layer {
 .testimonials {
     background-image: url('../images/overlay-bg.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
