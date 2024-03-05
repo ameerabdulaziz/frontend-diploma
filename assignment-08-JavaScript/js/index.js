@@ -401,27 +401,27 @@ Percentage < 40%: Grad F
 // }
 
 /* 20- Write a program to create Simple Calculator */
-// var firstNumber = +prompt("Enter a first number")
-// var secondNumber = +prompt("Enter a second number")
-// var operator = prompt("Enter an operator")
-//
-// var result;
-// switch(true) {
-//     case operator == '+':
-//         result = firstNumber + secondNumber
-//         console.log(`firstNumber + secondNumber = ${result}`)
-//         break;
-//     case operator == '-':
-//         result = firstNumber - secondNumber
-//         console.log(`firstNumber - secondNumber = ${result}`)
-//         break;
-//     case operator == '*':
-//         console.log(`firstNumber * secondNumber = ${result}`)
-//         break;
-//     case operator == '/':
-//         console.log(`firstNumber / secondNumber = ${result}`)
-//         break;
-//     default:
-//         console.log("wrong number")
-//         break;
-// }
+var firstNumber = +prompt("Enter a first number")
+var secondNumber = +prompt("Enter a second number")
+var operator = prompt("Enter an operator")
+
+var result;
+switch(true) {
+    case operator == '+':
+        result = firstNumber + secondNumber
+        console.log(`firstNumber + secondNumber = ${result}`)
+        break;
+    case operator == '-':
+        result = firstNumber - secondNumber
+        console.log(`firstNumber - secondNumber = ${result}`)
+        break;
+    case operator == '*':
+        console.log(`firstNumber * secondNumber = ${result}`)
+        break;
+    case operator == '/':
+        console.log(`firstNumber / secondNumber = ${result}`)
+        break;
+    default:
+        console.log("wrong number")
+        break;
+}
