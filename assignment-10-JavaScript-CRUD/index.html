@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10 - JavaScript - CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="text-center p-3">Assignment 10 - JavaScript - CRUD</h1>
+<main class="">
+    <h2 class="text-center p-2">CRUD</h2>
+    <main class="row p-5 bg-danger">
+        <div class="col-9">
+            <div class="row" id="products"></div>
+        </div>
+        <div class="col-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control pt-5 pb-3 border-0 border-bottom shadow-none" name="productName" id="productName" placeholder="Product Name">
+                <label for="productName">Product Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control pt-5 pb-3 border-0 border-bottom shadow-none" name="productPrice" id="productPrice" placeholder="Product Price">
+                <label for="productPrice">Product Price</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input list="categoryList" type="text" class="form-control pt-5 pb-3 border-0 border-bottom shadow-none" name="productCategory" id="productCategory" placeholder="Product Category">
+                <label for="productCategory">Product Category</label>
+                <datalist id="categoryList">
+                    <option value="TV"></option>
+                    <option value="Mobile"></option>
+                    <option value="Laptops"></option>
+                    <option value="Screens"></option>
+                    <option value="Electronics"></option>
+                </datalist>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea type="text" class="form-control py-5 border-0 border-bottom shadow-none" name="productDescription" id="productDescription" placeholder="Product Description"></textarea>
+                <label for="productDescription">Product Description</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="file" class="form-control border-0 border-bottom shadow-none" name="productImage" id="productImage" placeholder="Product Image">
+                <label for="productImage">Product Image</label>
+            </div>
+            <button class="btn btn-primary" onclick="addProduct()">Add Product</button>
+        </div>
+    </main>
+</main>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
